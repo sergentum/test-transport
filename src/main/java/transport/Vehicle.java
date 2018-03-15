@@ -1,10 +1,9 @@
 package transport;
 
 public abstract class Vehicle {
-    String name;
-    TransportType type;
-    int maxSpeed;
-    int wheelsCount;
+    private TransportType type;
+    private int maxSpeed;
+    private int wheelsCount;
 
     @Override
     public String toString() {
@@ -14,7 +13,7 @@ public abstract class Vehicle {
                 ;
     }
 
-    public Vehicle(TransportType type, int maxSpeed, int wheelsCount) {
+    Vehicle(TransportType type, int maxSpeed, int wheelsCount) {
         this.type = type;
         this.maxSpeed = maxSpeed;
         this.wheelsCount = wheelsCount;
